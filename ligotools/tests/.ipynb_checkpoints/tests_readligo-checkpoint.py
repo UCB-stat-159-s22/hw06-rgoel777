@@ -4,15 +4,11 @@ from scipy.interpolate import interp1d
 from scipy.signal import butter, filtfilt, iirdesign, zpk2tf, freqz
 import h5py
 import json
-
-# the IPython magic below must be commented out in the .py file, since it doesn't work there.
-%matplotlib inline
-%config InlineBackend.figure_format = 'retina'
 import matplotlib.pyplot as plt
 import matplotlib.mlab as mlab
 
 # LIGO-specific readligo.py 
-from ligotools import readligo as rl
+#from ligotools import readligo as rl
 
 hdf1 = lg.read_hdf5('data/L-L1_LOSC_4_V2-1126259446-32.hdf5')
 hdf2 = lg.read_hdf5('data/H-H1_LOSC_4_V2-1126259446-32.hdf5')
